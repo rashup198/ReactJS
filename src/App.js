@@ -1,23 +1,26 @@
-import { Component } from "react";
+
 import "./App.css";
-import Item from "./components/Item"; 
-import ItemDate from "./components/ItemDate";
+import NavBar from "./components/NavBar";
+import ProductList from './components/ProductList'
 
 function App() {
+
+  const productList =[{
+    Price:9999,
+    name:"Iphone 10S MAX",
+    quantity :0,
+
+  },{
+    Price:999,
+    name:"Redmi 10S MAX",
+    quantity :0,
+  }]
   return (
     <div>
-      <Item name= "Nirma" ></Item>
-      <ItemDate day="20" month="june" year="2003"></ItemDate>
-
-      <Item name= "SurfExcel"></Item>
-      <ItemDate day="22" month="July" year="1993"></ItemDate>
-
-      <Item name= "Rin"></Item>
-      <ItemDate day="21" month="March" year="2002"></ItemDate>
-
-      <Item name= "Gadhi"></Item>
-      <ItemDate day="19" month="August" year="2005"></ItemDate>
-      <div className ="App">Hello Jii</div>
+      <NavBar>
+      </NavBar>
+      <ProductList ProductList ={productList} ></ProductList>
+      <footer></footer>
     </div>
   )
 }
