@@ -17,9 +17,11 @@ function App() {
   }]
   return (
     <div>
-      <NavBar>
-      </NavBar>
+      <NavBar/>
+      <main>
+
       <ProductList ProductList ={productList} ></ProductList>
+      </main>
       <footer></footer>
     </div>
   )
